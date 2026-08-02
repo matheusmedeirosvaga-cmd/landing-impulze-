@@ -4,46 +4,28 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Impulze — Mais sinal. Mais cliente.</title>
-<meta name="description" content="Site que converte, tráfego pago bem gerido e atendimento com IA no WhatsApp — trabalhando juntos pra sua empresa gerar cliente real. Diagnóstico grátis.">
-<link rel="canonical" href="https://agenciaimpulze.com.br/">
-
-<!-- Open Graph / compartilhamento em redes sociais -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Impulze — Mais sinal. Mais cliente.">
-<meta property="og:description" content="Tráfego pago, criação de sites e IA no WhatsApp trabalhando juntos pra gerar cliente real. Peça seu diagnóstico grátis.">
-<meta property="og:url" content="https://agenciaimpulze.com.br/">
-<meta property="og:locale" content="pt_BR">
-
-<!-- Google Search Console: verificado via propriedade de domínio (DNS) em agenciaimpulze.com.br -->
-<!-- Não precisa de tag de verificação no HTML pra esse método -->
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 
-<!-- Google Consent Mode v2: por padrão, nega cookies não-essenciais até o usuário aceitar -->
+<!-- Google tag (gtag.js) — Analytics + Ads, com Consent Mode -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  // Por padrão, nada é armazenado até o visitante aceitar os cookies (LGPD)
   gtag('consent', 'default', {
     'ad_storage': 'denied',
+    'analytics_storage': 'denied',
     'ad_user_data': 'denied',
-    'ad_personalization': 'denied',
-    'analytics_storage': 'denied'
+    'ad_personalization': 'denied'
   });
 </script>
-
-<!-- Google tag (gtag.js) — Analytics + Ads -->
-<!-- ID de Medição do Google Analytics (GA4): G-771PWT69BQ -->
-<!-- ID da conta do Google Ads: AW-18357171451 -->
-<!-- As conversões "Lead form - Submit" e "SUBMIT_LEAD_FOI" são detectadas automaticamente -->
-<!-- por essa tag + pelo evento form_submit disparado no script.js, sem precisar de código extra -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-771PWT69BQ"></script>
 <script>
   gtag('js', new Date());
-  gtag('config', 'G-771PWT69BQ');   // Google Analytics (GA4)
-  gtag('config', 'AW-18357171451');   // Google Ads
+  gtag('config', 'G-771PWT69BQ');    // Google Analytics (GA4)
+  gtag('config', 'AW-18357171451');  // Google Ads
 </script>
 </head>
 <body>
@@ -54,7 +36,31 @@
   <div class="wrap header-row">
     <div class="logo">
       <span class="logo-mark">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M13 2L4 14H11L10 22L20 9H13L13 2Z" fill="#0B0F16"/></svg>
+        <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="orangeGradH" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FF7A50"/><stop offset="55%" stop-color="#FF6A3D"/><stop offset="100%" stop-color="#E8501F"/>
+            </linearGradient>
+            <linearGradient id="glossGradH" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.32"/><stop offset="45%" stop-color="#FFFFFF" stop-opacity="0.04"/><stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="boltGradH" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#171F30"/><stop offset="100%" stop-color="#0B0F16"/>
+            </linearGradient>
+            <clipPath id="badgeClipH"><rect x="4" y="4" width="120" height="120" rx="28"/></clipPath>
+          </defs>
+          <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#orangeGradH)"/>
+          <g clip-path="url(#badgeClipH)">
+            <ellipse cx="64" cy="18" rx="70" ry="34" fill="url(#glossGradH)"/>
+            <path d="M-4,66 L28,66 L38,40 L48,92 L58,46 L68,84 L78,66 L132,66" fill="none" stroke="#47E6B1" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+            <circle cx="100" cy="28" r="5" fill="none" stroke="#0B0F16" stroke-width="2.5" opacity="0.18"/>
+            <circle cx="100" cy="28" r="10.5" fill="none" stroke="#0B0F16" stroke-width="2.2" opacity="0.13"/>
+            <circle cx="100" cy="28" r="16" fill="none" stroke="#0B0F16" stroke-width="1.8" opacity="0.09"/>
+            <path d="M70 22L36 68H60L57 108L92 58H68L70 22Z" fill="#000000" opacity="0.18" transform="translate(2,3)"/>
+            <path d="M70 20L35 67H59L56 108L93 57H69L70 20Z" fill="url(#boltGradH)"/>
+            <path d="M70 20L35 67H59L56 108L93 57H69L70 20Z" fill="none" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="1.5"/>
+          </g>
+        </svg>
       </span>
       IMPUL<b>ZE</b>
     </div>
@@ -289,7 +295,31 @@
       <div>
         <div class="logo" style="margin-bottom:12px;">
           <span class="logo-mark">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M13 2L4 14H11L10 22L20 9H13L13 2Z" fill="#0B0F16"/></svg>
+            <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="orangeGradF" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#FF7A50"/><stop offset="55%" stop-color="#FF6A3D"/><stop offset="100%" stop-color="#E8501F"/>
+                </linearGradient>
+                <linearGradient id="glossGradF" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.32"/><stop offset="45%" stop-color="#FFFFFF" stop-opacity="0.04"/><stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="boltGradF" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#171F30"/><stop offset="100%" stop-color="#0B0F16"/>
+                </linearGradient>
+                <clipPath id="badgeClipF"><rect x="4" y="4" width="120" height="120" rx="28"/></clipPath>
+              </defs>
+              <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#orangeGradF)"/>
+              <g clip-path="url(#badgeClipF)">
+                <ellipse cx="64" cy="18" rx="70" ry="34" fill="url(#glossGradF)"/>
+                <path d="M-4,66 L28,66 L38,40 L48,92 L58,46 L68,84 L78,66 L132,66" fill="none" stroke="#47E6B1" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+                <circle cx="100" cy="28" r="5" fill="none" stroke="#0B0F16" stroke-width="2.5" opacity="0.18"/>
+                <circle cx="100" cy="28" r="10.5" fill="none" stroke="#0B0F16" stroke-width="2.2" opacity="0.13"/>
+                <circle cx="100" cy="28" r="16" fill="none" stroke="#0B0F16" stroke-width="1.8" opacity="0.09"/>
+                <path d="M70 22L36 68H60L57 108L92 58H68L70 22Z" fill="#000000" opacity="0.18" transform="translate(2,3)"/>
+                <path d="M70 20L35 67H59L56 108L93 57H69L70 20Z" fill="url(#boltGradF)"/>
+                <path d="M70 20L35 67H59L56 108L93 57H69L70 20Z" fill="none" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="1.5"/>
+              </g>
+            </svg>
           </span>
           IMPUL<b>ZE</b>
         </div>
@@ -313,11 +343,13 @@
   <svg viewBox="0 0 32 32" fill="#fff"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.703 4.61 1.916 6.473L4 29l7.727-1.877A11.94 11.94 0 0 0 16.001 27C22.628 27 28 21.627 28 15S22.628 3 16.001 3zm0 21.818a9.77 9.77 0 0 1-4.98-1.363l-.357-.212-4.586 1.114 1.13-4.47-.233-.366A9.77 9.77 0 0 1 5.818 15c0-5.615 4.568-10.182 10.183-10.182S26.184 9.385 26.184 15 21.616 24.818 16.001 24.818zm5.6-7.633c-.307-.153-1.816-.895-2.098-.998-.281-.102-.486-.153-.69.154-.204.306-.792.997-.972 1.202-.179.204-.358.23-.665.077-.307-.154-1.296-.478-2.469-1.524-.912-.813-1.528-1.817-1.707-2.124-.179-.306-.019-.472.135-.625.138-.138.307-.358.46-.537.153-.18.204-.307.307-.512.102-.204.05-.383-.026-.537-.077-.153-.69-1.664-.946-2.279-.249-.598-.502-.517-.69-.527-.179-.008-.383-.01-.588-.01a1.13 1.13 0 0 0-.818.383c-.281.307-1.073 1.05-1.073 2.56 0 1.51 1.099 2.97 1.252 3.175.153.204 2.163 3.303 5.24 4.632.732.316 1.303.505 1.748.646.734.234 1.402.2 1.93.121.589-.088 1.816-.742 2.072-1.459.256-.716.256-1.33.179-1.459-.076-.128-.281-.204-.588-.358z"/></svg>
 </a>
 
-<div id="cookieBanner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Aviso de cookies">
-  <p>Usamos cookies para analisar o tráfego do site e melhorar sua experiência, conforme nossa <a href="politica-de-privacidade.html">Política de Privacidade</a>.</p>
-  <div class="cookie-actions">
-    <button id="cookieDecline" type="button" class="cookie-btn cookie-btn-ghost">Recusar</button>
-    <button id="cookieAccept" type="button" class="cookie-btn cookie-btn-solid">Aceitar</button>
+<div id="cookieBanner" class="cookie-banner" hidden>
+  <div class="cookie-banner-inner">
+    <p>Usamos cookies para melhorar sua experiência e medir a performance dos nossos anúncios. Veja nossa <a href="politica-de-privacidade.html">Política de Privacidade</a>.</p>
+    <div class="cookie-actions">
+      <button id="cookieDecline" class="cookie-btn cookie-btn-ghost">Só essenciais</button>
+      <button id="cookieAccept" class="cookie-btn cookie-btn-solid">Aceitar cookies</button>
+    </div>
   </div>
 </div>
 
