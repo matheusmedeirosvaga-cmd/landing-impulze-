@@ -1,0 +1,53 @@
+<svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF7A50"/>
+      <stop offset="55%" stop-color="#FF6A3D"/>
+      <stop offset="100%" stop-color="#E8501F"/>
+    </linearGradient>
+    <linearGradient id="glossGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.32"/>
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="boltGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#171F30"/>
+      <stop offset="100%" stop-color="#0B0F16"/>
+    </linearGradient>
+    <clipPath id="badgeClip">
+      <rect x="4" y="4" width="120" height="120" rx="28"/>
+    </clipPath>
+  </defs>
+
+  <!-- Fundo do badge -->
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#orangeGrad)"/>
+
+  <g clip-path="url(#badgeClip)">
+    <!-- Brilho superior (dá profundidade) -->
+    <ellipse cx="64" cy="18" rx="70" ry="34" fill="url(#glossGrad)"/>
+
+    <!-- Onda de sinal (ECG / pulso), atrás do raio -->
+    <path d="M-4,66 L28,66 L38,40 L48,92 L58,46 L68,84 L78,66 L132,66"
+          fill="none" stroke="#47E6B1" stroke-width="4.5"
+          stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+
+    <!-- Anéis de sinal (canto superior direito, tipo "ao vivo") -->
+    <circle cx="100" cy="28" r="5" fill="none" stroke="#0B0F16" stroke-width="2.5" opacity="0.18"/>
+    <circle cx="100" cy="28" r="10.5" fill="none" stroke="#0B0F16" stroke-width="2.2" opacity="0.13"/>
+    <circle cx="100" cy="28" r="16" fill="none" stroke="#0B0F16" stroke-width="1.8" opacity="0.09"/>
+
+    <!-- Sombra sutil do raio, pra dar volume -->
+    <path d="M70 22L36 68H60L57 108L92 58H68L70 22Z"
+          fill="#000000" opacity="0.18" transform="translate(2,3)"/>
+
+    <!-- Raio principal -->
+    <path d="M70 20L35 67H59L56 108L93 57H69L70 20Z" fill="url(#boltGrad)"/>
+
+    <!-- Brilho fino na borda do raio -->
+    <path d="M70 20L35 67H59L56 108L93 57H69L70 20Z"
+          fill="none" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="1.5"/>
+  </g>
+
+  <!-- Borda externa sutil do badge -->
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="none" stroke="#000000" stroke-opacity="0.12" stroke-width="1.5"/>
+</svg>
