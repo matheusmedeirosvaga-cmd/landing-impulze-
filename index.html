@@ -3,29 +3,83 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
 <title>Impulze — Mais sinal. Mais cliente.</title>
+<meta name="description" content="Site que converte, tráfego pago bem gerido e atendimento com IA no WhatsApp — trabalhando juntos pra sua empresa gerar cliente real. Diagnóstico grátis.">
+<link rel="canonical" href="https://agenciaimpulze.com.br/">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="assets/logo-icon.svg">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/logo-icon-192.png">
+<link rel="apple-touch-icon" href="assets/logo-icon-192.png">
+
+<!-- Open Graph / compartilhamento em redes sociais -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Impulze — Mais sinal. Mais cliente.">
+<meta property="og:description" content="Tráfego pago, criação de sites e IA no WhatsApp trabalhando juntos pra gerar cliente real. Peça seu diagnóstico grátis.">
+<meta property="og:url" content="https://agenciaimpulze.com.br/">
+<meta property="og:image" content="https://agenciaimpulze.com.br/assets/logo-full-1200.png">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Impulze — Mais sinal. Mais cliente.">
+<meta name="twitter:description" content="Tráfego pago, criação de sites e IA no WhatsApp trabalhando juntos pra gerar cliente real.">
+<meta name="twitter:image" content="https://agenciaimpulze.com.br/assets/logo-full-1200.png">
+<!-- Google Search Console: verificado via propriedade de domínio (DNS) em agenciaimpulze.com.br -->
+<!-- Não precisa de tag de verificação no HTML pra esse método -->
+
+<!-- Dados estruturados (Schema.org): ajuda o Google a entender que a Impulze é uma empresa -->
+<!-- TODO: quando criar Instagram/Facebook, adicione um campo "sameAs": ["https://instagram.com/SEU_PERFIL", "https://facebook.com/SUA_PAGINA"] dentro do objeto abaixo -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Impulze",
+  "logo": "https://agenciaimpulze.com.br/assets/logo-full-1200.png",
+  "url": "https://agenciaimpulze.com.br/",
+  "description": "Agência de performance digital: tráfego pago, criação de sites e IA de atendimento no WhatsApp.",
+  "email": "contato@impulze.com.br",
+  "telephone": "+5553984439994",
+  "areaServed": {
+    "@type": "Country",
+    "name": "Brasil"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+5553984439994",
+    "contactType": "customer service",
+    "areaServed": "BR",
+    "availableLanguage": "Portuguese"
+  }
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 
-<!-- Google tag (gtag.js) — Analytics + Ads, com Consent Mode -->
+<!-- Google Consent Mode v2: por padrão, nega cookies não-essenciais até o usuário aceitar -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  // Por padrão, nada é armazenado até o visitante aceitar os cookies (LGPD)
   gtag('consent', 'default', {
     'ad_storage': 'denied',
-    'analytics_storage': 'denied',
     'ad_user_data': 'denied',
-    'ad_personalization': 'denied'
+    'ad_personalization': 'denied',
+    'analytics_storage': 'denied'
   });
 </script>
+
+<!-- Google tag (gtag.js) — Analytics + Ads -->
+<!-- ID de Medição do Google Analytics (GA4): G-771PWT69BQ -->
+<!-- ID da conta do Google Ads: AW-18357171451 -->
+<!-- As conversões "Lead form - Submit" e "SUBMIT_LEAD_FOI" são detectadas automaticamente -->
+<!-- por essa tag + pelo evento form_submit disparado no script.js, sem precisar de código extra -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-771PWT69BQ"></script>
 <script>
   gtag('js', new Date());
-  gtag('config', 'G-771PWT69BQ');    // Google Analytics (GA4)
-  gtag('config', 'AW-18357171451');  // Google Ads
+  gtag('config', 'G-771PWT69BQ');   // Google Analytics (GA4)
+  gtag('config', 'AW-18357171451');   // Google Ads
 </script>
 </head>
 <body>
@@ -36,31 +90,7 @@
   <div class="wrap header-row">
     <div class="logo">
       <span class="logo-mark">
-        <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="orangeGradH" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#FF7A50"/><stop offset="55%" stop-color="#FF6A3D"/><stop offset="100%" stop-color="#E8501F"/>
-            </linearGradient>
-            <linearGradient id="glossGradH" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.32"/><stop offset="45%" stop-color="#FFFFFF" stop-opacity="0.04"/><stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
-            </linearGradient>
-            <linearGradient id="boltGradH" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#171F30"/><stop offset="100%" stop-color="#0B0F16"/>
-            </linearGradient>
-            <clipPath id="badgeClipH"><rect x="4" y="4" width="120" height="120" rx="28"/></clipPath>
-          </defs>
-          <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#orangeGradH)"/>
-          <g clip-path="url(#badgeClipH)">
-            <ellipse cx="64" cy="18" rx="70" ry="34" fill="url(#glossGradH)"/>
-            <path d="M-4,66 L28,66 L38,40 L48,92 L58,46 L68,84 L78,66 L132,66" fill="none" stroke="#47E6B1" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
-            <circle cx="100" cy="28" r="5" fill="none" stroke="#0B0F16" stroke-width="2.5" opacity="0.18"/>
-            <circle cx="100" cy="28" r="10.5" fill="none" stroke="#0B0F16" stroke-width="2.2" opacity="0.13"/>
-            <circle cx="100" cy="28" r="16" fill="none" stroke="#0B0F16" stroke-width="1.8" opacity="0.09"/>
-            <path d="M70 22L36 68H60L57 108L92 58H68L70 22Z" fill="#000000" opacity="0.18" transform="translate(2,3)"/>
-            <path d="M70 20L35 67H59L56 108L93 57H69L70 20Z" fill="url(#boltGradH)"/>
-            <path d="M70 20L35 67H59L56 108L93 57H69L70 20Z" fill="none" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="1.5"/>
-          </g>
-        </svg>
+        <img src="assets/logo-icon.svg" alt="Impulze" width="30" height="30">
       </span>
       IMPUL<b>ZE</b>
     </div>
@@ -143,7 +173,7 @@
       <div class="strip">
         <span class="num">01</span>
         <div class="body">
-          <h4>Tráfego Pago <span class="tag-core">Foco em lead</span></h4>
+          <h3>Tráfego Pago <span class="tag-core">Foco em lead</span></h3>
           <p>Google Ads e Meta Ads geridos pra gerar contato qualificado, não só clique. Otimização semanal de campanha, público e criativo.</p>
         </div>
         <div class="eq"><i></i><i></i><i></i><i></i><i></i></div>
@@ -151,7 +181,7 @@
       <div class="strip">
         <span class="num">02</span>
         <div class="body">
-          <h4>Criação de Sites <span class="tag-core">Feito pra converter</span></h4>
+          <h3>Criação de Sites <span class="tag-core">Feito pra converter</span></h3>
           <p>Sites e landing pages rápidos, com formulário e CTA pensados pra quem vem do anúncio decidir rápido — não só "bonitos".</p>
         </div>
         <div class="eq"><i></i><i></i><i></i><i></i><i></i></div>
@@ -159,7 +189,7 @@
       <div class="strip">
         <span class="num">03</span>
         <div class="body">
-          <h4>IA no WhatsApp <span class="tag-core">Atende 24h</span></h4>
+          <h3>IA no WhatsApp <span class="tag-core">Atende 24h</span></h3>
           <p>Responde na hora, qualifica o lead e agenda automaticamente — mesmo fora do horário comercial, sem perder contato.</p>
         </div>
         <div class="eq"><i></i><i></i><i></i><i></i><i></i></div>
@@ -167,7 +197,7 @@
       <div class="strip">
         <span class="num">04</span>
         <div class="body">
-          <h4>SEO / Google Meu Negócio</h4>
+          <h3>SEO / Google Meu Negócio</h3>
           <p>Cadastro e otimização do seu perfil pra aparecer no mapa e nas buscas locais da sua cidade, em qualquer estado do país.</p>
         </div>
         <div class="eq"><i></i><i></i><i></i><i></i><i></i></div>
@@ -175,7 +205,7 @@
       <div class="strip">
         <span class="num">05</span>
         <div class="body">
-          <h4>Redes Sociais</h4>
+          <h3>Redes Sociais</h3>
           <p>Linha editorial, artes e postagens consistentes pra manter presença ativa entre um clique de anúncio e outro.</p>
         </div>
         <div class="eq"><i></i><i></i><i></i><i></i><i></i></div>
@@ -183,7 +213,7 @@
       <div class="strip">
         <span class="num">06</span>
         <div class="body">
-          <h4>Comunicação Visual + Carro de Som</h4>
+          <h3>Comunicação Visual + Carro de Som</h3>
           <p>Banners, fachadas, panfletos e divulgação sonora local pra quem também quer presença fora do digital.</p>
         </div>
         <div class="eq"><i></i><i></i><i></i><i></i><i></i></div>
@@ -201,19 +231,19 @@
     <div class="steps">
       <div class="step">
         <div class="step-num">01</div>
-        <h4>Diagnóstico gratuito</h4>
+        <h3>Diagnóstico gratuito</h3>
         <p>Você preenche o formulário. Analisamos seu site, anúncios e atendimento atual — de graça, sem compromisso.</p>
         <div class="step-line"></div>
       </div>
       <div class="step">
         <div class="step-num">02</div>
-        <h4>Plano por canal</h4>
+        <h3>Plano por canal</h3>
         <p>Te mostramos exatamente onde está o gargalo — tráfego, site ou atendimento — e o que priorizar primeiro.</p>
         <div class="step-line"></div>
       </div>
       <div class="step">
         <div class="step-num">03</div>
-        <h4>Execução e ajuste contínuo</h4>
+        <h3>Execução e ajuste contínuo</h3>
         <p>Colocamos no ar e acompanhamos com relatórios semanais e dashboard, ajustando o que não estiver performando.</p>
       </div>
     </div>
@@ -295,31 +325,7 @@
       <div>
         <div class="logo" style="margin-bottom:12px;">
           <span class="logo-mark">
-            <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <linearGradient id="orangeGradF" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#FF7A50"/><stop offset="55%" stop-color="#FF6A3D"/><stop offset="100%" stop-color="#E8501F"/>
-                </linearGradient>
-                <linearGradient id="glossGradF" x1="0%" y1="0%" x2="0%" y2="100%">
-                  <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.32"/><stop offset="45%" stop-color="#FFFFFF" stop-opacity="0.04"/><stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
-                </linearGradient>
-                <linearGradient id="boltGradF" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#171F30"/><stop offset="100%" stop-color="#0B0F16"/>
-                </linearGradient>
-                <clipPath id="badgeClipF"><rect x="4" y="4" width="120" height="120" rx="28"/></clipPath>
-              </defs>
-              <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#orangeGradF)"/>
-              <g clip-path="url(#badgeClipF)">
-                <ellipse cx="64" cy="18" rx="70" ry="34" fill="url(#glossGradF)"/>
-                <path d="M-4,66 L28,66 L38,40 L48,92 L58,46 L68,84 L78,66 L132,66" fill="none" stroke="#47E6B1" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
-                <circle cx="100" cy="28" r="5" fill="none" stroke="#0B0F16" stroke-width="2.5" opacity="0.18"/>
-                <circle cx="100" cy="28" r="10.5" fill="none" stroke="#0B0F16" stroke-width="2.2" opacity="0.13"/>
-                <circle cx="100" cy="28" r="16" fill="none" stroke="#0B0F16" stroke-width="1.8" opacity="0.09"/>
-                <path d="M70 22L36 68H60L57 108L92 58H68L70 22Z" fill="#000000" opacity="0.18" transform="translate(2,3)"/>
-                <path d="M70 20L35 67H59L56 108L93 57H69L70 20Z" fill="url(#boltGradF)"/>
-                <path d="M70 20L35 67H59L56 108L93 57H69L70 20Z" fill="none" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="1.5"/>
-              </g>
-            </svg>
+            <img src="assets/logo-icon.svg" alt="Impulze" width="30" height="30">
           </span>
           IMPUL<b>ZE</b>
         </div>
@@ -343,13 +349,11 @@
   <svg viewBox="0 0 32 32" fill="#fff"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.703 4.61 1.916 6.473L4 29l7.727-1.877A11.94 11.94 0 0 0 16.001 27C22.628 27 28 21.627 28 15S22.628 3 16.001 3zm0 21.818a9.77 9.77 0 0 1-4.98-1.363l-.357-.212-4.586 1.114 1.13-4.47-.233-.366A9.77 9.77 0 0 1 5.818 15c0-5.615 4.568-10.182 10.183-10.182S26.184 9.385 26.184 15 21.616 24.818 16.001 24.818zm5.6-7.633c-.307-.153-1.816-.895-2.098-.998-.281-.102-.486-.153-.69.154-.204.306-.792.997-.972 1.202-.179.204-.358.23-.665.077-.307-.154-1.296-.478-2.469-1.524-.912-.813-1.528-1.817-1.707-2.124-.179-.306-.019-.472.135-.625.138-.138.307-.358.46-.537.153-.18.204-.307.307-.512.102-.204.05-.383-.026-.537-.077-.153-.69-1.664-.946-2.279-.249-.598-.502-.517-.69-.527-.179-.008-.383-.01-.588-.01a1.13 1.13 0 0 0-.818.383c-.281.307-1.073 1.05-1.073 2.56 0 1.51 1.099 2.97 1.252 3.175.153.204 2.163 3.303 5.24 4.632.732.316 1.303.505 1.748.646.734.234 1.402.2 1.93.121.589-.088 1.816-.742 2.072-1.459.256-.716.256-1.33.179-1.459-.076-.128-.281-.204-.588-.358z"/></svg>
 </a>
 
-<div id="cookieBanner" class="cookie-banner" hidden>
-  <div class="cookie-banner-inner">
-    <p>Usamos cookies para melhorar sua experiência e medir a performance dos nossos anúncios. Veja nossa <a href="politica-de-privacidade.html">Política de Privacidade</a>.</p>
-    <div class="cookie-actions">
-      <button id="cookieDecline" class="cookie-btn cookie-btn-ghost">Só essenciais</button>
-      <button id="cookieAccept" class="cookie-btn cookie-btn-solid">Aceitar cookies</button>
-    </div>
+<div id="cookieBanner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Aviso de cookies">
+  <p>Usamos cookies para analisar o tráfego do site e melhorar sua experiência, conforme nossa <a href="politica-de-privacidade.html">Política de Privacidade</a>.</p>
+  <div class="cookie-actions">
+    <button id="cookieDecline" type="button" class="cookie-btn cookie-btn-ghost">Recusar</button>
+    <button id="cookieAccept" type="button" class="cookie-btn cookie-btn-solid">Aceitar</button>
   </div>
 </div>
 
